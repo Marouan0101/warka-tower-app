@@ -7,7 +7,7 @@ export default function Navbar() {
     <div className={styles.navbar}>
       <h1 className={styles.title}>
         <Link className={styles.title_link} to='/'>
-          TeamWarka
+          #TeamWarka
         </Link>
       </h1>
 

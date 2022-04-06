@@ -1,0 +1,19 @@
+.footer {
+  @apply bg-tertiary text-center py-8 p-10 md:px-24;
+}
+
+.items {
+  @apply md:flex;
+}
+
+.item {
+  @apply flex-1;
+}
+
+.item:not(:last-of-type) {
+  @apply mb-4 md:mb-0;
+}
+
+.link {
+  @apply text-xl text-white font-bold;
+}

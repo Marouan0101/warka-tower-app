@@ -55,7 +55,7 @@ export default function DonateModal() {
           />
         </div>
 
-        <Button text='kurt' className={styles.submit_button} />
+        <Button text='Next Step' className={styles.submit_button} />
       </form>
     </div>
   );

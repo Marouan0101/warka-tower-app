@@ -3,7 +3,7 @@
 }
 
 .title {
-  @apply text-3xl font-bold;
+  @apply text-3xl font-bold uppercase text-primary;
 }
 
 .items {
@@ -15,7 +15,7 @@
 }
 
 .item:not(:last-of-type) {
-  border-right: 0.1rem solid;
+  border-right: 1px solid;
 }
 
 .link {
