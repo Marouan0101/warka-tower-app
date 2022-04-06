@@ -1,0 +1,23 @@
+.navbar {
+  @apply bg-tertiary px-10 p-2 flex justify-between items-center;
+}
+
+.title {
+  @apply text-3xl font-bold;
+}
+
+.items {
+  @apply flex;
+}
+
+.item {
+  @apply px-5;
+}
+
+.item:not(:last-of-type) {
+  border-right: 0.1rem solid;
+}
+
+.link {
+  @apply text-primary font-semibold text-lg;
+}

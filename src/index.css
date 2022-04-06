@@ -1,13 +1,9 @@
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  @apply m-0 p-0;
-}
-
 body {
-  @apply bg-slate-100;
-  margin: 0;
+  @apply bg-[#ffffff];
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
