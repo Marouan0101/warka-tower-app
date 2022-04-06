@@ -1,5 +1,5 @@
 .navbar {
-  @apply bg-tertiary px-10 p-2 flex justify-between items-center;
+  @apply bg-tertiary px-10 py-3 flex justify-between items-center;
 }
 
 .title {
