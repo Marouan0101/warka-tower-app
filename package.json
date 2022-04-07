@@ -18,6 +18,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "keywords": [
+    "heroku"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
