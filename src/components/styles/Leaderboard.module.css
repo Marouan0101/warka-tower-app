@@ -55,7 +55,7 @@
 }
 
 .donator_team {
-  @apply text-secondary-dark;
+  @apply text-secondary-light;
 }
 
 .donator_name {
