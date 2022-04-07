@@ -11,9 +11,13 @@ export default function App() {
       <Navbar />
 
       <div className={styles.container}>
-        <DonateModal />
+        <div className={styles.donate_modal}>
+          <DonateModal />
+        </div>
 
-        <Leaderboard />
+        <div className={styles.leaderboard}>
+          <Leaderboard />
+        </div>
       </div>
 
       <Footer />

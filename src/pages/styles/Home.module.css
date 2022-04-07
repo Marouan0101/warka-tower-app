@@ -1,3 +1,11 @@
 .container {
   @apply px-4 sm:px-14 md:px-20;
 }
+
+.donate_modal {
+  @apply my-10;
+}
+
+.leaderboard {
+  @apply my-20;
+}

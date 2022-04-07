@@ -14,7 +14,7 @@ export default function Navbar() {
       <ul className={styles.items}>
         <li className={styles.item}>
           <Link className={styles.link} to='/'>
-            Link 1
+            Our Goal
           </Link>
         </li>
         <li className={styles.item}>
@@ -24,7 +24,7 @@ export default function Navbar() {
         </li>
         <li className={styles.item}>
           <Link className={styles.link} to='/'>
-            About us
+            About Us
           </Link>
         </li>
       </ul>

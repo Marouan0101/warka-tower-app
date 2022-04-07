@@ -6,6 +6,7 @@ export default function DonateModal() {
   return (
     <div className={styles.modal}>
       <h1 className={styles.title}>Join #TeamWarka</h1>
+      <h2></h2>
       <form className={styles.form}>
         <div className={styles.form_group}>
           <label className={`${styles.label} ${styles.label_name}`}>
@@ -16,6 +17,17 @@ export default function DonateModal() {
             type='text'
             placeholder='Display Name'
             required
+          />
+        </div>
+
+        <div className={styles.form_group}>
+          <label className={`${styles.label} ${styles.label_name}`}>
+            Team Name
+          </label>
+          <input
+            className={`${styles.input} ${styles.input_name}`}
+            type='text'
+            placeholder='Team Name (Optional)'
           />
         </div>
 

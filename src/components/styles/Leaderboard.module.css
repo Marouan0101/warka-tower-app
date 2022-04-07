@@ -1,0 +1,74 @@
+.modal {
+  @apply m-auto lg:w-4/6;
+}
+
+.title {
+  @apply text-7xl font-extrabold uppercase text-tertiary text-center mb-20;
+}
+
+.donator {
+  @apply bg-white items-center pr-4 py-5 rounded-lg flex justify-between;
+}
+
+.donator:not(:last-of-type) {
+  @apply mb-4;
+}
+
+.donator:first-of-type * {
+  @apply block text-center;
+}
+
+.donator:first-of-type {
+  @apply block bg-tertiary p-0;
+}
+
+.donator:first-of-type .donator_placement {
+  @apply flex text-8xl -translate-y-[4rem] items-center justify-center bg-tertiary w-36 h-36 rounded-full m-auto;
+}
+
+.donator:first-of-type .donator_team {
+  @apply text-lg;
+}
+
+.donator:first-of-type .donator_name {
+  @apply text-white text-3xl -translate-y-[4rem];
+}
+
+.donator:first-of-type .donator_message {
+  @apply -translate-y-[3rem] text-white text-lg;
+}
+
+.donator:first-of-type .donator_donation {
+  @apply px-2 -translate-y-[2rem] w-40 m-auto mb-2 mt-3;
+}
+
+.donator:first-of-type .donator_date {
+  @apply -translate-y-[2rem] text-[#b4dbe1];
+}
+
+.left {
+  @apply flex;
+}
+
+.donator_placement {
+  @apply text-4xl font-extrabold text-primary mx-5 my-auto;
+}
+
+.donator_team {
+  @apply text-secondary-dark;
+}
+
+.donator_name {
+  @apply text-xl text-tertiary font-extrabold;
+}
+
+.donator_message {
+}
+
+.donator_donation {
+  @apply bg-primary-dark rounded-3xl text-white text-center text-lg px-4  mb-2;
+}
+
+.donator_date {
+  @apply text-sm text-right text-gray-400;
+}
