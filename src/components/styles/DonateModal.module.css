@@ -3,8 +3,16 @@
   box-shadow: 0px 5px 6px grey;
 }
 
+.header {
+  @apply uppercase font-bold mb-6 text-center text-tertiary;
+}
+
 .title {
-  @apply uppercase text-3xl font-bold mb-6 text-center text-tertiary;
+  @apply text-3xl mb-4;
+}
+
+.subtitle {
+  @apply text-lg;
 }
 
 .form {

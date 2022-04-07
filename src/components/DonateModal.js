@@ -5,8 +5,10 @@ import styles from './styles/DonateModal.module.css';
 export default function DonateModal() {
   return (
     <div className={styles.modal}>
-      <h1 className={styles.title}>Join #TeamWarka</h1>
-      <h2></h2>
+      <div className={styles.header}>
+        <h1 className={styles.title}>Join #TeamWarka</h1>
+        <h2 className={styles.subtitle}>$1000 Builds a Warka Tower</h2>
+      </div>
       <form className={styles.form}>
         <div className={styles.form_group}>
           <label className={`${styles.label} ${styles.label_name}`}>
