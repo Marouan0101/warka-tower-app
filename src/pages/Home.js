@@ -4,14 +4,23 @@ import DonateModal from '../components/DonateModal';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Leaderboard from '../components/Leaderboard';
+import Header from '../components/Header';
+import backgroundImage from '../images/warka-tower-1.jpg';
 
 export default function App() {
   return (
-    <div className='App'>
+    <>
       <Navbar />
 
+      <Header
+        title='Every Drop Counts'
+        subtitle='#TeamWarka is a nonprofit focused on innovative, and truly sustainable solutions, to some of humanity’s most enduring issues'
+        bgImage={backgroundImage}
+        buttonText='Make a Difference!'
+      />
+
       <div className={styles.container}>
-        <div className={styles.donate_modal}>
+        <div className={styles.donate_modal} id='donate_modal'>
           <DonateModal />
         </div>
 
@@ -21,6 +30,6 @@ export default function App() {
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 }

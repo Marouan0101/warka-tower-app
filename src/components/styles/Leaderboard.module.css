@@ -3,11 +3,11 @@
 }
 
 .title {
-  @apply text-7xl font-extrabold uppercase text-tertiary text-center mb-20;
+  @apply text-5xl xs:text-6xl sm:text-7xl font-extrabold uppercase text-tertiary text-center mb-20;
 }
 
 .donator {
-  @apply bg-white items-center pr-4 py-5 rounded-lg flex justify-between;
+  @apply bg-white items-center pr-4 py-5 rounded-lg flex justify-between shadow-md;
 }
 
 .donator:not(:last-of-type) {
@@ -39,7 +39,7 @@
 }
 
 .donator:first-of-type .donator_donation {
-  @apply px-2 -translate-y-[2rem] w-40 m-auto mb-2 mt-3;
+  @apply -translate-y-[2rem] inline-block mb-2 mt-3;
 }
 
 .donator:first-of-type .donator_date {
