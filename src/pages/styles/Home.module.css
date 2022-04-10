@@ -3,9 +3,9 @@
 }
 
 .donate_modal {
-  @apply my-10;
+  @apply -translate-y-20;
 }
 
 .leaderboard {
-  @apply my-20;
+  @apply mb-20;
 }

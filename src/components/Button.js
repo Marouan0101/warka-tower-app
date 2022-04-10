@@ -1,9 +1,17 @@
 import React from 'react';
 import styles from './styles/Button.module.css';
 
-export default function Button({ text, className }) {
+export default function Button({ text, className, scrollIntoViewById }) {
   return (
-    <button type='submit' className={`${styles.button} ${className}`}>
+    <button
+      className={`${styles.button} ${className}`}
+      onClick={() => {
+        document.getElementById(scrollIntoViewById).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }}
+    >
       {text}
     </button>
   );
