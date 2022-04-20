@@ -21,17 +21,22 @@ export default function Navbar() {
   return (
     <div className={styles.navbar}>
       <h1 className={styles.title}>
-        <Link className={styles.title_link} to='/'>
+        <a className={styles.title_link} href='/'>
           #TeamWarka
-        </Link>
+        </a>
       </h1>
 
       <ul className={styles.items}>
         {navigationLinks.map((link) => (
-          <li key={link.id} className={styles.item}>
-            <Link className={styles.link} to={link.url}>
+          <li
+            key={link.id}
+            className={`${styles.item} ${
+              link.url === window.location.pathname ? 'active' : ''
+            }`}
+          >
+            <a className={styles.link} href={link.url}>
               {link.title}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

@@ -4,12 +4,8 @@ import Button from './Button';
 
 export default function Header({ title, subtitle, bgImage, buttonText }) {
   return (
-    <div
-      className={styles.header}
-      style={{ backgroundImage: `url(${bgImage})` }}
-    >
-      <div></div>
-      <div className={styles.header_container}>
+    <div className={styles.header}>
+      <div className={styles.container}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
 
@@ -21,6 +17,7 @@ export default function Header({ title, subtitle, bgImage, buttonText }) {
           />
         )}
       </div>
+      <img src={bgImage} />
     </div>
   );
 }

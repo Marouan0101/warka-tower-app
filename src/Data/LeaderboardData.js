@@ -1,6 +1,5 @@
 const data = [
   {
-    id: 15,
     name: 'Linn Janko',
     email: 'ljanko0@exblog.jp',
     donation: 5.72,
@@ -9,7 +8,6 @@ const data = [
     team: 'Dabtype',
   },
   {
-    id: 17,
     name: 'Brynna Sapsford',
     email: 'bsapsford1@hud.gov',
     donation: 4.33,
@@ -18,7 +16,6 @@ const data = [
     team: null,
   },
   {
-    id: 16,
     name: 'Galvin Ormiston',
     email: 'gormiston2@opensource.org',
     donation: 5.33,
@@ -27,7 +24,6 @@ const data = [
     team: null,
   },
   {
-    id: 13,
     name: 'Arnuad Sheasby',
     email: 'asheasby3@skyrock.com',
     donation: 6.81,
@@ -36,7 +32,6 @@ const data = [
     team: null,
   },
   {
-    id: 20,
     name: 'Mirella Swanson',
     email: 'mswanson4@g.co',
     donation: 0.84,
@@ -45,7 +40,6 @@ const data = [
     team: null,
   },
   {
-    id: 12,
     name: 'Doralyn Cox',
     email: 'dcox5@simplemachines.org',
     donation: 7.11,
@@ -54,7 +48,6 @@ const data = [
     team: 'Innojam',
   },
   {
-    id: 10,
     name: 'Candis Englefield',
     email: 'cenglefield6@reverbnation.com',
     donation: 10.11,
@@ -63,7 +56,6 @@ const data = [
     team: null,
   },
   {
-    id: 19,
     name: 'Gustavus Colleford',
     email: 'gcolleford7@parallels.com',
     donation: 1.28,
@@ -72,7 +64,6 @@ const data = [
     team: null,
   },
   {
-    id: 18,
     name: 'Carce Placido',
     email: 'cplacido8@usa.gov',
     donation: 1.71,
@@ -81,7 +72,6 @@ const data = [
     team: null,
   },
   {
-    id: 11,
     name: 'Travis Gromley',
     email: 'tgromley9@wisc.edu',
     donation: 8.21,
@@ -90,7 +80,6 @@ const data = [
     team: null,
   },
   {
-    id: 14,
     name: 'Deva Bridat',
     email: 'dbridata@fda.gov',
     donation: 6.36,
@@ -99,7 +88,6 @@ const data = [
     team: 'Dabtype',
   },
   {
-    id: 5,
     name: 'Matthieu Imeson',
     email: 'mimesonb@dot.gov',
     donation: 12.79,
@@ -108,7 +96,6 @@ const data = [
     team: null,
   },
   {
-    id: 4,
     name: 'Eirena Easson',
     email: 'eeassonc@meetup.com',
     donation: 14.72,
@@ -117,7 +104,6 @@ const data = [
     team: null,
   },
   {
-    id: 1,
     name: 'Silva Iwaszkiewicz',
     email: 'siwaszkiewiczd@alibaba.com',
     donation: 18.99,
@@ -126,7 +112,6 @@ const data = [
     team: 'Devshare',
   },
   {
-    id: 8,
     name: 'Nady Brumhead',
     email: 'nbrumheade@technorati.com',
     donation: 10.47,
@@ -135,7 +120,6 @@ const data = [
     team: null,
   },
   {
-    id: 7,
     name: 'Stefan Jobb',
     email: 'sjobbf@webmd.com',
     donation: 11.16,
@@ -144,7 +128,6 @@ const data = [
     team: null,
   },
   {
-    id: 2,
     name: 'Jeffrey Willshere',
     email: 'jwillshereg@yahoo.com',
     donation: 16.26,
@@ -153,7 +136,6 @@ const data = [
     team: null,
   },
   {
-    id: 6,
     name: 'Edy Wisden',
     email: 'ewisdenh@craigslist.org',
     donation: 11.69,
@@ -162,7 +144,6 @@ const data = [
     team: null,
   },
   {
-    id: 9,
     name: 'Ginnie Gisburne',
     email: 'ggisburnei@zdnet.com',
     donation: 10.36,
@@ -171,7 +152,6 @@ const data = [
     team: null,
   },
   {
-    id: 3,
     name: 'Cherey Acosta',
     email: 'cacostaj@comsenz.com',
     donation: 15.87,

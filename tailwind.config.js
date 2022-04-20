@@ -10,19 +10,9 @@ module.exports = {
         tertiary: '#113259',
         'tertiary-light': '#0075ff',
       },
-      keyframes: {
-        'slide-up': {
-          '0%': { transform: 'translateY(100%)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '100' },
-        },
-        'fade-in': {
-          '0%': { filter: 'brightness(0)' },
-          '100%': { filter: 'brightness(1)' },
-        },
-      },
-      animation: {
-        'slide-up': 'slide-up 1.5s ease-out',
-        'fade-in': 'fade-in 3s ease-in-out',
+      brightness: {
+        25: '.25',
+        10: '.1',
       },
       screens: {
         xs: '475px',
@@ -32,6 +22,19 @@ module.exports = {
         'tower-2': "url('/src/images/warka-tower-2.jpg')",
         'tower-3': "url('/src/images/warka-tower-3.jpg')",
         'tower-4': "url('/src/images/warka-tower-4.jpg')",
+      },
+      keyframes: {
+        'slide-up': {
+          '0%': { transform: 'translateY(100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '100' },
+        },
+        'fade-in': {
+          '100%': { filter: 'brightness(.5)' },
+        },
+      },
+      animation: {
+        'slide-up': 'slide-up 1s ease-in-out',
+        'fade-in': 'fade-in 2s ease-in-out forwards',
       },
     },
   },

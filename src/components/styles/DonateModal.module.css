@@ -65,5 +65,5 @@
 }
 
 .submit_button {
-  @apply w-full  text-white bg-secondary;
+  @apply w-full  text-white bg-secondary font-extrabold text-lg;
 }

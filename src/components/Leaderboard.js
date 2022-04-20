@@ -11,6 +11,7 @@ export default function Leaderboard() {
   data.map((donator) => {
     return (donationTotal += donator.donation);
   });
+  let placement = 0;
 
   return (
     <div className={styles.modal}>
@@ -18,10 +19,11 @@ export default function Leaderboard() {
 
       <ul className={styles.donators}>
         {data.map((donator) => {
+          placement += 1;
           return (
             <li key={donator.id} className={styles.donator}>
               <div className={styles.left}>
-                <div className={styles.donator_placement}>{donator.id}</div>
+                <div className={styles.donator_placement}>{placement}</div>
 
                 <div>
                   <div className={styles.donator_team}>
