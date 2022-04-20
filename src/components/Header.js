@@ -17,7 +17,7 @@ export default function Header({ title, subtitle, bgImage, buttonText }) {
           />
         )}
       </div>
-      <img src={bgImage} />
+      <img src={bgImage} alt='couldnt find' />
     </div>
   );
 }

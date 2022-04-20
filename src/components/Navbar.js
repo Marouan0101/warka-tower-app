@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './styles/Navbar.module.css';
 import navigationLinks from '../Data/NavigationLinks';
 
@@ -31,7 +30,7 @@ export default function Navbar() {
           <li
             key={link.id}
             className={`${styles.item} ${
-              link.url === window.location.pathname ? 'active' : ''
+              link.url === window.location.pathname ? styles.active : ''
             }`}
           >
             <a className={styles.link} href={link.url}>

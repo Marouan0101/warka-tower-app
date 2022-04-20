@@ -3,7 +3,7 @@
 }
 
 .header {
-  @apply uppercase font-bold mb-6 text-center text-tertiary;
+  @apply uppercase font-bold mb-6 text-center bg-gradient-to-r from-tertiary to-tertiary-light bg-clip-text text-transparent;
 }
 
 .title {
@@ -34,7 +34,13 @@
 }
 
 .input:focus {
-  @apply outline-secondary;
+  @apply outline-none border-2;
+  border-image: linear-gradient(
+    to right,
+    theme('colors.secondary'),
+    theme('colors.secondary-light')
+  );
+  border-image-slice: 1;
 }
 
 .label_name {
@@ -65,5 +71,5 @@
 }
 
 .submit_button {
-  @apply w-full  text-white bg-secondary font-extrabold text-lg;
+  @apply bg-gradient-to-r from-secondary to-secondary-light w-full  text-white font-extrabold text-lg;
 }

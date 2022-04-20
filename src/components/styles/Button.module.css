@@ -1,3 +1,11 @@
 .button {
   @apply rounded-full py-3 px-8;
 }
+
+.button {
+  transition: all 0.3s;
+}
+
+.button:hover {
+  @apply bg-gradient-to-l brightness-125;
+}

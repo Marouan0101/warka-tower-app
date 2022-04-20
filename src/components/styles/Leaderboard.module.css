@@ -3,7 +3,7 @@
 }
 
 .title {
-  @apply text-5xl xs:text-6xl sm:text-7xl font-extrabold uppercase text-tertiary text-center mb-20;
+  @apply bg-gradient-to-r from-tertiary to-tertiary-light bg-clip-text text-transparent text-5xl xs:text-6xl sm:text-7xl font-extrabold uppercase  text-center mb-20;
 }
 
 .donator {
@@ -15,11 +15,11 @@
 }
 
 .top_donator {
-  @apply rounded-xl shadow-lg text-center bg-gradient-to-br from-tertiary to-[#1e5ca3] py-10 mb-10;
+  @apply rounded-xl shadow-lg text-center bg-gradient-to-br from-tertiary to-tertiary-light py-10 mb-10;
 }
 
 .top_donator .placement {
-  @apply text-8xl mb-6;
+  @apply text-8xl mb-6 bg-gradient-to-tl from-secondary to-secondary-light;
 }
 
 .top_donator .team {
@@ -39,7 +39,7 @@
 }
 
 .top_donator .date {
-  @apply text-[#b4dbe1];
+  @apply text-cyan-100;
 }
 
 .donator * {
@@ -55,11 +55,11 @@
 }
 
 .team {
-  @apply text-secondary-light;
+  @apply bg-gradient-to-r from-secondary to-secondary-light bg-clip-text text-transparent font-semibold;
 }
 
 .name {
-  @apply text-xl text-tertiary font-extrabold;
+  @apply bg-gradient-to-r from-tertiary to-tertiary-light bg-clip-text text-transparent text-xl  font-extrabold;
 }
 
 .message {

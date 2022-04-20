@@ -29,11 +29,10 @@
 
 .button {
   @apply uppercase brightness-75 bg-gradient-to-r from-primary-dark to-primary mt-12  text-xl font-bold text-white;
-  transition: all 0.3s;
 }
 
 .button:hover {
-  @apply brightness-90 bg-gradient-to-l from-primary-dark to-primary;
+  @apply !brightness-90;
 }
 
 .donation {

@@ -6,9 +6,9 @@ module.exports = {
         primary: '#88b636',
         'primary-dark': '#518360',
         secondary: '#dc582a',
-        'secondary-light': '#bc6c25',
+        'secondary-light': '#ff983f',
         tertiary: '#113259',
-        'tertiary-light': '#0075ff',
+        'tertiary-light': '#1e5ca3',
       },
       brightness: {
         25: '.25',

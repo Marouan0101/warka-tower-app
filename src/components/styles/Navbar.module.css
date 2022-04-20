@@ -1,10 +1,13 @@
 .navbar {
-  @apply bg-tertiary px-5 py-2 text-center md:px-10 md:py-3 md:flex md:justify-between items-center fixed w-full z-50 shadow-md shadow-black;
-  transition: all 0.3s;
+  @apply bg-gradient-to-r from-tertiary to-tertiary-light px-5 py-2 text-center md:px-10 md:py-3 md:flex md:justify-between items-center fixed w-full z-50 shadow-sm shadow-black;
+}
+
+.navbar * {
+  transition: all 0.1s;
 }
 
 .title {
-  @apply text-3xl mb-2 md:mb-0 font-bold uppercase bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent text-3xl mb-2 md:mb-0 font-bold uppercase;
 }
 
 .items {
@@ -16,9 +19,17 @@
 }
 
 .item:not(:last-of-type) {
-  border-right: 1px solid;
+  @apply border-r border-tertiary;
 }
 
 .link {
-  @apply text-primary font-semibold text-lg;
+  @apply text-white font-semibold text-lg;
+}
+
+.link:hover {
+  @apply bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent;
+}
+
+.active .link {
+  @apply bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent border-b-2 border-primary;
 }
