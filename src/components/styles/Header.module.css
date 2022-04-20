@@ -1,14 +1,14 @@
 .header {
-  @apply h-[40rem] sm:h-[60rem] text-center sm:text-left bg-no-repeat bg-cover bg-right md:bg-center relative;
+  @apply h-[40rem] sm:h-[60rem] text-center sm:text-left;
 }
 
 .header img {
-  @apply left-0 w-full h-[70rem] brightness-10 object-cover object-top animate-fade-in;
+  @apply left-0 w-full h-full object-cover object-top animate-fade;
   animation-delay: 0.5s;
 }
 
 .container {
-  @apply absolute brightness-150 z-20 animate-slide-up pt-36 pb-10 px-10 sm:px-24 md:px-32 bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent;
+  @apply absolute z-10 brightness-150  animate-slide-up pt-28 px-8 xs:px-16 md:px-32 bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent;
 }
 
 .container:last-child {

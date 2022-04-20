@@ -1,5 +1,5 @@
 .navbar {
-  @apply bg-tertiary px-5 py-2 text-center md:px-10 md:py-3 md:flex md:justify-between items-center fixed w-full z-50;
+  @apply bg-tertiary px-5 py-2 text-center md:px-10 md:py-3 md:flex md:justify-between items-center fixed w-full z-50 shadow-md shadow-black;
   transition: all 0.3s;
 }
 

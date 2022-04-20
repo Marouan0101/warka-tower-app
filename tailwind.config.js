@@ -28,13 +28,13 @@ module.exports = {
           '0%': { transform: 'translateY(100%)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '100' },
         },
-        'fade-in': {
+        fade: {
           '100%': { filter: 'brightness(.5)' },
         },
       },
       animation: {
         'slide-up': 'slide-up 1s ease-in-out',
-        'fade-in': 'fade-in 2s ease-in-out forwards',
+        fade: 'fade 2s ease-in-out forwards',
       },
     },
   },

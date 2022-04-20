@@ -21,27 +21,34 @@ export default function Leaderboard() {
         {data.map((donator) => {
           placement += 1;
           return (
-            <li key={donator.id} className={styles.donator}>
-              <div className={styles.left}>
-                <div className={styles.donator_placement}>{placement}</div>
+            <li
+              key={placement}
+              className={`${
+                placement === 1 ? styles.top_donator : styles.donator
+              }`}
+            >
+              <div className='flex'>
+                <div className={styles.placement}>{placement}</div>
 
                 <div>
-                  <div className={styles.donator_team}>
-                    {donator.team && `Team ${donator.team}`}
-                  </div>
+                  {donator.team && (
+                    <div className={styles.team}>
+                      {donator.team && `Team ${donator.team}`}
+                    </div>
+                  )}
 
-                  <div className={styles.donator_name}>
+                  <div className={styles.name}>
                     {donator.id === 1 ? `🎉${donator.name}🎉` : donator.name}
                   </div>
 
-                  <div className={styles.donator_message}>
-                    {donator.message}
-                  </div>
+                  {donator.message && (
+                    <div className={styles.message}>{donator.message}</div>
+                  )}
                 </div>
               </div>
 
               <div>
-                <div className={styles.donator_donation}>
+                <div className={styles.donation}>
                   {donator.id === 1
                     ? `${donator.donation} Of ${Math.trunc(
                         donationTotal
@@ -49,7 +56,7 @@ export default function Leaderboard() {
                     : `${donator.donation} Towers`}
                 </div>
 
-                <div className={styles.donator_date}>{donator.date}</div>
+                <div className={styles.date}>{donator.date}</div>
               </div>
             </li>
           );

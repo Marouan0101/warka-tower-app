@@ -10,65 +10,65 @@
   @apply bg-white items-center pr-4 py-5 rounded-lg flex justify-between shadow-md;
 }
 
+.top_donator * {
+  @apply block !text-center;
+}
+
+.top_donator {
+  @apply rounded-xl shadow-lg text-center bg-gradient-to-br from-tertiary to-[#1e5ca3] py-10 mb-10;
+}
+
+.top_donator .placement {
+  @apply text-8xl mb-6;
+}
+
+.top_donator .team {
+  @apply text-lg;
+}
+
+.top_donator .name {
+  @apply text-white text-3xl;
+}
+
+.top_donator .message {
+  @apply text-white text-lg;
+}
+
+.top_donator .donation {
+  @apply inline-block mb-4 mt-3;
+}
+
+.top_donator .date {
+  @apply text-[#b4dbe1];
+}
+
+.donator * {
+  @apply items-center;
+}
+
 .donator:not(:last-of-type) {
   @apply mb-4;
 }
 
-.donator:first-of-type * {
-  @apply block text-center;
+.placement {
+  @apply text-4xl font-extrabold bg-gradient-to-tl from-primary-dark to-primary rounded-3xl bg-clip-text text-transparent mx-5;
 }
 
-.donator:first-of-type {
-  @apply block bg-tertiary p-0;
-}
-
-.donator:first-of-type .donator_placement {
-  @apply flex text-8xl -translate-y-[4rem] items-center justify-center bg-tertiary w-36 h-36 rounded-full m-auto;
-}
-
-.donator:first-of-type .donator_team {
-  @apply text-lg;
-}
-
-.donator:first-of-type .donator_name {
-  @apply text-white text-3xl -translate-y-[4rem];
-}
-
-.donator:first-of-type .donator_message {
-  @apply -translate-y-[3rem] text-white text-lg;
-}
-
-.donator:first-of-type .donator_donation {
-  @apply -translate-y-[2rem] inline-block mb-2 mt-3;
-}
-
-.donator:first-of-type .donator_date {
-  @apply -translate-y-[2rem] text-[#b4dbe1];
-}
-
-.left {
-  @apply flex;
-}
-
-.donator_placement {
-  @apply text-4xl font-extrabold text-primary mx-5 my-auto;
-}
-
-.donator_team {
+.team {
   @apply text-secondary-light;
 }
 
-.donator_name {
+.name {
   @apply text-xl text-tertiary font-extrabold;
 }
 
-.donator_message {
+.message {
 }
 
-.donator_donation {
-  @apply bg-primary-dark rounded-3xl text-white text-center text-lg px-4  mb-2;
+.donation {
+  @apply bg-gradient-to-r from-primary-dark to-primary rounded-3xl text-white text-center text-lg px-4 mb-2;
 }
 
-.donator_date {
+.date {
   @apply text-sm text-right text-gray-400;
 }
