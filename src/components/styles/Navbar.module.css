@@ -1,9 +1,9 @@
 .navbar {
-  @apply bg-gradient-to-r from-tertiary to-tertiary-light px-5 py-2 text-center md:px-10 md:py-3 md:flex md:justify-between items-center fixed w-full z-50 shadow-sm shadow-black;
+  @apply bg-gradient-to-r from-tertiary to-tertiary-light flex sm:block md:flex justify-between sticky w-full px-5 py-2 md:px-10 md:py-3 text-center items-center z-50 shadow-sm shadow-black transition-all;
 }
 
 .navbar * {
-  transition: all 0.1s;
+  @apply whitespace-nowrap;
 }
 
 .title {
@@ -11,7 +11,7 @@
 }
 
 .items {
-  @apply flex m-auto md:m-0 md:w-auto;
+  @apply hidden sm:flex m-auto md:m-0 md:w-auto;
 }
 
 .item {
@@ -32,4 +32,23 @@
 
 .active .link {
   @apply bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent border-b-2 border-primary;
+}
+
+.menu_icon {
+  @apply text-3xl sm:hidden;
+}
+
+.menu_icon * {
+}
+
+.navbar_open .items {
+  @apply block absolute py-10 w-full right-0 top-14 bg-gradient-to-r from-tertiary to-tertiary-light;
+}
+
+.navbar_open .item {
+  @apply py-3;
+}
+
+.navbar_open .link {
+  @apply text-2xl border-0;
 }

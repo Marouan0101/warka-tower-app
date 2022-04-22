@@ -6,7 +6,7 @@ import styles from './styles/Donate.module.css';
 import backgroundImage from '../images/warka-tower-5.jpg';
 
 export default function Donate() {
-  document.title = 'Donate';
+  document.title = 'Donate | TeamWarka';
 
   return (
     <>

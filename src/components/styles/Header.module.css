@@ -3,12 +3,13 @@
 }
 
 .header img {
-  @apply left-0 w-full h-full object-cover object-top animate-fade;
+  @apply left-0 w-full h-full object-cover object-right sm:object-center  animate-fade;
   animation-delay: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
 }
 
 .container {
-  @apply absolute z-10 brightness-150  animate-slide-up pt-28 px-8 xs:px-16 md:px-32 bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent;
+  @apply absolute z-10 brightness-150  animate-slide-up mt-16 px-8 xs:px-16 md:px-32 bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent;
 }
 
 .container:last-child {
@@ -21,10 +22,6 @@
 
 .subtitle {
   @apply text-2xl sm:text-3xl md:text-4xl  font-semibold;
-}
-
-.title,
-.subtitle {
 }
 
 .button {

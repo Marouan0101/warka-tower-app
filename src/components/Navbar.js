@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles/Navbar.module.css';
 import navigationLinks from '../Data/NavigationLinks';
+import { GrMenu } from 'react-icons/gr';
 
 window.onload = function () {
   const navbar = document.querySelector(`.${styles.navbar}`);
@@ -17,6 +18,15 @@ window.onload = function () {
 };
 
 export default function Navbar() {
+  window.onload = () => {
+    const navbar = document.querySelector(`.${styles.navbar}`);
+    const menuIcon = document.querySelector(`.${styles.menu_icon}`);
+
+    menuIcon.addEventListener('click', () => {
+      navbar.classList.toggle(`${styles.navbar_open}`);
+    });
+  };
+
   return (
     <div className={styles.navbar}>
       <h1 className={styles.title}>
@@ -39,6 +49,8 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
+
+      <GrMenu className={styles.menu_icon} />
     </div>
   );
 }

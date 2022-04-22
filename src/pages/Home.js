@@ -8,7 +8,7 @@ import Header from '../components/Header';
 import backgroundImage from '../images/warka-tower-1.jpg';
 
 export default function App() {
-  document.title = 'Home';
+  document.title = 'Home | TeamWarka';
 
   return (
     <>
