@@ -29,7 +29,7 @@ module.exports = {
           '100%': { transform: 'translateY(0)', opacity: '100' },
         },
         fade: {
-          '100%': { filter: 'brightness(.5)' },
+          '100%': { filter: 'brightness(.3)' },
         },
       },
       animation: {

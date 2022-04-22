@@ -5,6 +5,8 @@ import { GrMenu } from 'react-icons/gr';
 
 window.onload = function () {
   const navbar = document.querySelector(`.${styles.navbar}`);
+  const menuIcon = document.querySelector(`.${styles.menu_icon}`);
+
   let prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
@@ -15,18 +17,13 @@ window.onload = function () {
     }
     prevScrollpos = currentScrollPos;
   };
+
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle(`${styles.navbar_open}`);
+  });
 };
 
 export default function Navbar() {
-  window.onload = () => {
-    const navbar = document.querySelector(`.${styles.navbar}`);
-    const menuIcon = document.querySelector(`.${styles.menu_icon}`);
-
-    menuIcon.addEventListener('click', () => {
-      navbar.classList.toggle(`${styles.navbar_open}`);
-    });
-  };
-
   return (
     <div className={styles.navbar}>
       <h1 className={styles.title}>
