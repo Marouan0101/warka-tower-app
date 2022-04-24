@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import Leaderboard from '../components/Leaderboard';
 import Header from '../components/Header';
 import backgroundImage from '../images/warka-tower-1.jpg';
+import WarkaTowerCalculator from '../components/WarkaTowerCalculator';
 
 export default function App() {
   document.title = 'Home | TeamWarka';
@@ -29,6 +30,8 @@ export default function App() {
         <div className={styles.leaderboard}>
           <Leaderboard />
         </div>
+
+        <WarkaTowerCalculator />
       </div>
 
       <Footer />
