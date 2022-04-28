@@ -9,3 +9,7 @@
 .leaderboard {
   @apply mt-10;
 }
+
+.warkaIndexCalculator {
+  @apply mt-20;
+}

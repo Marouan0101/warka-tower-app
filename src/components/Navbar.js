@@ -7,20 +7,22 @@ window.onload = function () {
   const navbar = document.querySelector(`.${styles.navbar}`);
   const menuIcon = document.querySelector(`.${styles.menu_icon}`);
 
-  let prevScrollpos = window.pageYOffset;
-  window.onscroll = function () {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      navbar.style.top = '0';
-    } else {
-      navbar.style.top = `-${navbar.clientHeight}px`;
-    }
-    prevScrollpos = currentScrollPos;
-  };
+  if (navbar && menuIcon) {
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      let currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        navbar.style.top = '0';
+      } else {
+        navbar.style.top = `-${navbar.clientHeight}px`;
+      }
+      prevScrollpos = currentScrollPos;
+    };
 
-  menuIcon.addEventListener('click', () => {
-    navbar.classList.toggle(`${styles.navbar_open}`);
-  });
+    menuIcon.addEventListener('click', () => {
+      navbar.classList.toggle(`${styles.navbar_open}`);
+    });
+  }
 };
 
 export default function Navbar() {

@@ -1,0 +1,11 @@
+.searchbar {
+  @apply flex border-2 rounded-full items-center pl-3;
+}
+
+.icon {
+  @apply text-2xl;
+}
+
+.input {
+  @apply w-full focus:outline-none py-2 rounded-r-full pr-4 pl-2 text-lg;
+}

@@ -1,0 +1,7 @@
+.module {
+  @apply bg-white rounded-3xl p-10;
+}
+
+.title {
+  @apply text-6xl text-center uppercase mb-10 font-bold bg-gradient-to-r from-tertiary to-tertiary-light bg-clip-text text-transparent;
+}
