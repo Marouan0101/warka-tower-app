@@ -25,7 +25,7 @@ const WarkaTowerCalculator = ({ title }) => {
           );
     setWeather(data);
 
-    setWarkaIndex(index <= 0 ? 0 : index >= 100 ? 100 : index);
+    setWarkaIndex(index <= 0 ? '0' : index >= 100 ? 100 : index);
   };
 
   const onChangeHandler = async (searchQuery) => {
