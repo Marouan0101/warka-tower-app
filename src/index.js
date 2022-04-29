@@ -4,14 +4,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import Donate from './pages/Donate';
 import Home from './pages/Home';
-import WarkaIndexCalculator from './components/WarkaIndexCalculator';
+import WarkaIndex from './pages/WarkaIndex';
 import BadRequest from './pages/BadRequest';
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='/WarkaIndex' element={<WarkaIndexCalculator />} />
+      <Route path='/WarkaIndex' element={<WarkaIndex />} />
       <Route path='/Donate' element={<Donate />} />
       <Route path='*' element={<BadRequest />} />
     </Routes>

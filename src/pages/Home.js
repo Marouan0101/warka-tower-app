@@ -20,6 +20,7 @@ export default function App() {
         subtitle='#TeamWarka is a nonprofit focused on innovative, and truly sustainable solutions, to some of humanity’s most enduring issues'
         bgImage={backgroundImage}
         buttonText='Make a Difference!'
+        scrollTo='donate_modal'
       />
 
       <div className={styles.container}>
@@ -32,7 +33,7 @@ export default function App() {
         </div>
 
         <div className={styles.warkaIndexCalculator}>
-          <WarkaIndexCalculator />
+          <WarkaIndexCalculator title='Find Out How Suitable Your Country Is For a Warka Tower' />
         </div>
       </div>
 

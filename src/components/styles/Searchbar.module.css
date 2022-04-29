@@ -7,5 +7,9 @@
 }
 
 .input {
-  @apply w-full focus:outline-none py-2 rounded-r-full pr-4 pl-2 text-lg;
+  @apply w-full focus:outline-none py-2 rounded-r-full pr-4 pl-2 text-lg bg-transparent;
+}
+
+.searchbar {
+  @apply border-secondary;
 }

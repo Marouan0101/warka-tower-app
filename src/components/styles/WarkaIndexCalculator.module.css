@@ -1,5 +1,5 @@
 .module {
-  @apply bg-white rounded-3xl p-10;
+  @apply rounded-3xl mt-20 w-2/3 m-auto;
 }
 
 .title {

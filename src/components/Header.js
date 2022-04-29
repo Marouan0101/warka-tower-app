@@ -2,7 +2,13 @@ import React from 'react';
 import styles from './styles/Header.module.css';
 import Button from './Button';
 
-export default function Header({ title, subtitle, bgImage, buttonText }) {
+export default function Header({
+  title,
+  subtitle,
+  bgImage,
+  buttonText,
+  scrollTo,
+}) {
   return (
     <div className={styles.header}>
       <div className={styles.container}>
@@ -13,11 +19,11 @@ export default function Header({ title, subtitle, bgImage, buttonText }) {
           <Button
             text={buttonText}
             className={styles.button}
-            scrollIntoViewById='donate_modal'
+            scrollIntoViewById={scrollTo}
           />
         )}
       </div>
-      <img src={bgImage} alt='couldnt find' />
+      {bgImage && <img src={bgImage} alt='couldnt find' />}
     </div>
   );
 }
