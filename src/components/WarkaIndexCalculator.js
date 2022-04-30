@@ -40,13 +40,13 @@ const WarkaTowerCalculator = ({ title }) => {
   }
 
   const renderData = () => {
-    return (
-      <div className='bg-white rounded-2xl p-10 mt-10'>
-        <h2 className='text-4xl font-bold text-center  bg-gradient-to-r  from-secondary to-secondary-light bg-clip-text text-transparent'>
-          Warka Index
-        </h2>
+    if (weather) {
+      return (
+        <div className='bg-white rounded-2xl p-10 mt-10'>
+          <h2 className='text-4xl font-bold text-center  bg-gradient-to-r  from-secondary to-secondary-light bg-clip-text text-transparent'>
+            Warka Index
+          </h2>
 
-        {weather && (
           <div className='flex justify-between mt-4'>
             <div>
               {weather.location.country && (
@@ -105,9 +105,9 @@ const WarkaTowerCalculator = ({ title }) => {
               </div>
             </div>
           </div>
-        )}
-      </div>
-    );
+        </div>
+      );
+    }
   };
 
   return (

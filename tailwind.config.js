@@ -9,6 +9,7 @@ module.exports = {
         'secondary-light': '#ff983f',
         tertiary: '#113259',
         'tertiary-light': '#1e5ca3',
+        grey: 'rgb(243, 244, 246)',
       },
       brightness: {
         25: '.25',

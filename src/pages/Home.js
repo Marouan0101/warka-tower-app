@@ -23,7 +23,7 @@ export default function App() {
         scrollTo='donate_modal'
       />
 
-      <div className={styles.container}>
+      <div className='container'>
         <div className={styles.donate_modal} id='donate_modal'>
           <DonateModal />
         </div>

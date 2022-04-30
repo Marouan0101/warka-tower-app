@@ -1,15 +1,11 @@
 .searchbar {
-  @apply flex border-2 rounded-full items-center pl-3;
+  @apply flex h-14 rounded-full items-center p-0.5 bg-gradient-to-r from-secondary to-secondary-light;
 }
 
 .icon {
-  @apply text-2xl;
+  @apply w-10 h-full bg-grey rounded-l-full pl-3;
 }
 
 .input {
-  @apply w-full focus:outline-none py-2 rounded-r-full pr-4 pl-2 text-lg bg-transparent;
-}
-
-.searchbar {
-  @apply border-secondary;
+  @apply w-full focus:outline-none py-2 pl-2 pr-3 rounded-r-full h-full  text-lg bg-grey;
 }

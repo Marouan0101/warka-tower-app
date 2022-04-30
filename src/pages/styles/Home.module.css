@@ -1,7 +1,3 @@
-.container {
-  @apply px-4 sm:px-14 md:px-20;
-}
-
 .donate_modal {
   @apply -translate-y-20;
 }

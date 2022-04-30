@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500&display=swap');
 
 body {
-  @apply bg-gray-100 overflow-x-hidden;
+  @apply bg-grey overflow-x-hidden;
 
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,4 +14,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  @apply px-4 sm:px-14 md:px-20;
 }
