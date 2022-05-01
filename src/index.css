@@ -17,5 +17,5 @@ code {
 }
 
 .container {
-  @apply px-4 sm:px-14 md:px-20;
+  @apply px-0  sm:px-14 md:px-20 lg:px-24 xl:px-52 2xl:px-64 m-auto;
 }

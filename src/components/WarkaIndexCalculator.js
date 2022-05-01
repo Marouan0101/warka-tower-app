@@ -116,7 +116,7 @@ const WarkaTowerCalculator = ({ title }) => {
 
       <div className={styles.module}>
         <SearchBar
-          className='w-80 m-auto'
+          className='w-[90%] xs:w-80 m-auto'
           value={query}
           onChange={(e) => onChangeHandler(e.target.value)}
           placeholder='Search For Any Country or City'

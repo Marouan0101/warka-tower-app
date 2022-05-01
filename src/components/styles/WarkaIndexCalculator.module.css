@@ -1,7 +1,7 @@
 .module {
-  @apply rounded-3xl mt-20 w-2/3 m-auto;
+  @apply rounded-3xl mt-20;
 }
 
 .title {
-  @apply text-6xl text-center uppercase mb-10 font-bold bg-gradient-to-r from-tertiary to-tertiary-light bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-tertiary to-tertiary-light bg-clip-text text-transparent text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-extrabold uppercase  text-center mb-20;
 }
