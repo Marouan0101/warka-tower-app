@@ -3,6 +3,7 @@ import axios from 'axios';
 import weatherApiKey from '../Data/weatherApiKey';
 import styles from './styles/WarkaIndexCalculator.module.css';
 import SearchBar from './Searchbar';
+import formulaImg from '../images/warka-index-formula.svg';
 
 const WarkaTowerCalculator = ({ title }) => {
   const [weather, setWeather] = useState();
@@ -19,8 +20,8 @@ const WarkaTowerCalculator = ({ title }) => {
         : Math.floor(
             ((data.forecast.forecastday[0].hour[16].dewpoint_c /
               data.forecast.forecastday[0].day.avgtemp_c) *
-              0.6 +
-              (data.forecast.forecastday[0].day.avghumidity / 100) * 0.4) *
+              0.5 +
+              (data.forecast.forecastday[0].day.avghumidity / 100) * 0.5) *
               100
           );
     setWeather(data);
@@ -104,6 +105,31 @@ const WarkaTowerCalculator = ({ title }) => {
                 ></div>
               </div>
             </div>
+          </div>
+
+          <hr className='my-10 border-tertiary border bg-tertiary rounded-full' />
+
+          <div>
+            <h1 className='text-center text-3xl font-bold bg-gradient-to-r from-tertiary to-tertiary-light bg-clip-text text-transparent mb-4'>
+              How Did We Calculate This?
+            </h1>
+            <p className='text-xl mb-6 md:mb-4'>
+              We use live data from{' '}
+              <a
+                className='bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent font-medium hover:brightness-75'
+                href='https://www.weatherapi.com/'
+                target='_blank'
+              >
+                Weather Api
+              </a>{' '}
+              to calculate the Warka Index for almost any location. We calculate
+              this by our very own formula.
+            </p>
+            <h2 className='text-2xl font-bold bg-gradient-to-r from-tertiary to-tertiary-light bg-clip-text text-transparent'>
+              Formula
+            </h2>
+
+            <img className='m-auto w-full lg:w-2/3' src={formulaImg} />
           </div>
         </div>
       );
