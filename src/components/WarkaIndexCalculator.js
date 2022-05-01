@@ -119,7 +119,7 @@ const WarkaTowerCalculator = ({ title }) => {
           className='w-[90%] xs:w-80 m-auto'
           value={query}
           onChange={(e) => onChangeHandler(e.target.value)}
-          placeholder='Search For Any Country or City'
+          placeholder='Search Any Country or City'
         />
 
         {renderData()}

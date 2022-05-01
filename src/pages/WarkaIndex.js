@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import WarkaIndexCalculator from '../components/WarkaIndexCalculator';
+import backgroundImage from '../images/world-map.jpg';
 
 const WarkaIndex = () => {
   document.title = 'Warka Index | TeamWarka';
@@ -13,13 +14,13 @@ const WarkaIndex = () => {
 
       <Header
         title='Find Out How Suitable Your Country Is For a Warka Tower'
-        bgImage='https://images.theconversation.com/files/332916/original/file-20200505-83751-17bb4ob.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop'
+        bgImage={backgroundImage}
         buttonText='Try It!'
         scrollTo='warkaIndexCalculator'
       />
 
       <div className='container'>
-        <WarkaIndexCalculator />
+        <WarkaIndexCalculator title="Search For a Country Or City To Find Out It's Warka Index" />
       </div>
 
       <Footer />
