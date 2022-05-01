@@ -1,5 +1,5 @@
 .navbar {
-  @apply bg-gradient-to-r from-tertiary to-tertiary-light flex sm:block md:flex justify-between sticky w-full px-5 py-2 md:px-10 md:py-3 text-center items-center z-50 shadow-sm shadow-black transition-all;
+  @apply bg-gradient-to-r from-tertiary to-tertiary-light flex sm:block lg:flex justify-between sticky w-full px-5 py-2 md:px-10 md:py-3 text-center items-center z-50 shadow-sm shadow-black transition-all;
 }
 
 .navbar * {
