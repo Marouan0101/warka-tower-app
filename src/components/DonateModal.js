@@ -52,7 +52,7 @@ export default function DonateModal() {
           <input
             className={`${styles.input} ${styles.input_donate}`}
             type='number'
-            placeholder='Amount'
+            placeholder='Amount in USD'
             required
           />
         </div>
