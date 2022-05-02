@@ -43,7 +43,7 @@ const WarkaTowerCalculator = ({ title }) => {
   const renderData = () => {
     if (weather) {
       return (
-        <div className='bg-white rounded-2xl p-10 mt-10'>
+        <div className='bg-white rounded-2xl p-5 sm:p-10 mt-10'>
           <h2 className='text-4xl font-bold text-center  bg-gradient-to-r  from-secondary to-secondary-light bg-clip-text text-transparent'>
             Warka Index
           </h2>
@@ -113,7 +113,7 @@ const WarkaTowerCalculator = ({ title }) => {
             <h1 className='text-center text-3xl font-bold bg-gradient-to-r from-tertiary to-tertiary-light bg-clip-text text-transparent mb-4'>
               How Did We Calculate This?
             </h1>
-            <p className='text-xl mb-6 md:mb-4'>
+            <p className='text-xl text-center sm:text-left mb-6 md:mb-4'>
               We use live data from{' '}
               <a
                 className='bg-gradient-to-r from-primary-dark to-primary bg-clip-text text-transparent font-medium hover:brightness-75'
@@ -125,7 +125,7 @@ const WarkaTowerCalculator = ({ title }) => {
               to calculate the Warka Index for almost any location. We calculate
               this by our very own formula.
             </p>
-            <h2 className='text-2xl font-bold bg-gradient-to-r from-tertiary to-tertiary-light bg-clip-text text-transparent'>
+            <h2 className='text-2xl text-center sm:text-left mb-2 font-bold bg-gradient-to-r from-tertiary to-tertiary-light bg-clip-text text-transparent'>
               Formula
             </h2>
 
